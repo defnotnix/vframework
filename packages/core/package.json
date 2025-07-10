@@ -1,0 +1,29 @@
+{
+  "name": "@nyx/core",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@mantine/hooks": "^8.1.1",
+    "@tanstack/react-query": "^5.80.7",
+    "axios": "^1.10.0",
+    "js-cookie": "^3.0.5",
+    "lodash": "^4.17.21",
+    "next": "^15.3.3",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "zod": "^3.25.67",
+    "zustand": "^5.0.5"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.17.18"
+  }
+}

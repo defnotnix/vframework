@@ -1,0 +1,1 @@
+export { PageDataTable } from "./PageDataTable";

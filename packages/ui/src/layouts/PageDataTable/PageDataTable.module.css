@@ -1,0 +1,26 @@
+.list::before {
+  display: none;
+}
+
+.tab {
+  font-weight: 600;
+  font-size: var(--mantine-font-size-xs);
+  height: 40px;
+  border-radius: 0;
+  opacity: 0.5;
+  filter: saturate(0);
+  -webkit-filter: saturate(0);
+
+  &:hover {
+    opacity: 1;
+    filter: saturate(1);
+    -webkit-filter: saturate(1);
+    color: var(--mantine-color-dark-9);
+  }
+
+  &[data-active] {
+    opacity: 1;
+    filter: saturate(1);
+    -webkit-filter: saturate(1);
+  }
+}
