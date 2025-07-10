@@ -1,5 +1,5 @@
 {
-  "name": "my-turborepo",
+  "name": "vframework",
   "private": true,
   "scripts": {
     "build": "turbo run build",
