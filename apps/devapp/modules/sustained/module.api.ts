@@ -1,4 +1,4 @@
-import { moduleApiCall } from "@nyx/core";
+import { moduleApiCall } from "@vkit/core";
 
 async function getAll() {
   return await moduleApiCall.getRecords({

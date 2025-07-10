@@ -25,7 +25,7 @@ import {
 //components
 
 //vstax
-import { DataTableWrapper } from "@nyx/core";
+import { DataTableWrapper } from "@vkit/core";
 import { apiModule } from "../../module.api";
 import { MagnifyingGlassIcon } from "@phosphor-icons/react";
 
