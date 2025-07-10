@@ -2,8 +2,8 @@
 
 import { PropsWithChildren, useEffect } from "react";
 //vfw
-import { AppWrapper } from "@nyx/ui";
-import { QueryWrapper } from "@nyx/core";
+import { AppWrapper } from "@vkit/ui";
+import { QueryWrapper } from "@vkit/core";
 //themes
 import { configThemeMantine } from "@/config/theme";
 //styles

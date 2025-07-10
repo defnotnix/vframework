@@ -38,8 +38,8 @@
     "recharts": "^2.15.3",
     "zod": "^3.25.67",
     "zustand": "^5.0.5",
-    "@nyx/core": "*",
-    "@nyx/ui": "*"
+    "@vkit/core": "*",
+    "@vkit/ui": "*"
   },
   "devDependencies": {
     "@types/node": "^20",
