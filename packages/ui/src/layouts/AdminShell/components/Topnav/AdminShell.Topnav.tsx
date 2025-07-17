@@ -39,7 +39,7 @@ import classes from "./AdminShell.module.css";
 import { PropAdminShellTopnav } from "../../AdminShell.type";
 import { usePathname, useRouter } from "next/navigation";
 
-export function AdminShellTopnav({ navItems }: PropAdminShellTopnav) {
+export function AdminShellTopnav({}: PropAdminShellTopnav) {
   // * DEFINITIONS
 
   const Pathname = usePathname();

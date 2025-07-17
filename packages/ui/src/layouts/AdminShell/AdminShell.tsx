@@ -1,22 +1,31 @@
 "use client";
 
-import { Container } from "@mantine/core";
+import { Container, Flex } from "@mantine/core";
 //components
+import { AdminShellMainnav } from "./components/MainNav";
 
-import { AdminShellTopnav } from "./components/Topnav/index";
 //type
 import { PropAdminShell } from "./AdminShell.type";
 
 export function AdminShell({
   navItems,
-  classNames,
-
+  actions,
+  logo,
+  appTitle,
   children,
 }: PropAdminShell) {
   return (
     <>
-      <AdminShellTopnav navItems={navItems} />
-      {children}
+      <Flex>
+        <nav>
+          <AdminShellMainnav
+            logo={logo}
+            navItems={navItems}
+            appTitle={appTitle}
+          />
+        </nav>
+        {children}
+      </Flex>
     </>
   );
 }

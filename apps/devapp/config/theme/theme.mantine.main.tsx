@@ -1,18 +1,22 @@
+import { colorsTuple } from "@mantine/core";
+
 export const configThemeMantineMain: any = {
   // * COLORS & SHADES
   colors: {
     brand: [
-      "#f4f5fb", // 50
-      "#e8eaf6", // 100
-      "#cbd4ec", // 200
-      "#9eafdb", // 300
-      "#6a85c6", // 400
-      "#4765b0", // 500
-      "#354e94", // 600
-      "#2c3f78", // 700
-      "#283764", // 800
-      "#263154", // 900
+      "#ebaeb1", // 50
+      "#e69a9d", // 100
+      "#e08589", // 200
+      "#db7176", // 300
+      "#d65d62", // 400
+      "#d1484f", // 500
+      "#cc343b", // 600
+      "#b82f35", // 700
+      "#a32a2f", // 800
+      "#8f2429", // 900
     ],
+    backgroundPrimary: colorsTuple("#242424"),
+    backgroundDeep: colorsTuple("#1A1A1A"),
   },
   primaryColor: "brand",
   primaryShade: {
