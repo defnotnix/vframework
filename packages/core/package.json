@@ -1,5 +1,5 @@
 {
-  "name": "@nyx/core",
+  "name": "@vkit/core",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {

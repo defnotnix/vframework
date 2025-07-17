@@ -1,4 +1,4 @@
-import { apiDispatch } from "@nyx/core";
+import { apiDispatch } from "@vkit/core";
 
 async function getRecords({
   endpoint,

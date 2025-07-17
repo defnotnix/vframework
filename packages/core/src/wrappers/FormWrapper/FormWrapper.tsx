@@ -6,7 +6,7 @@ import { useFormWrapperStore } from "./FormWrapper.store";
 //react-query
 import { useMutation } from "@tanstack/react-query";
 //helpers
-import { formatJsonSubmit } from "@nyx/core";
+import { formatJsonSubmit } from "@vkit/core";
 import { formWrapperErrorHandler } from "./FormWrapper.errorhandleer";
 //context
 import {

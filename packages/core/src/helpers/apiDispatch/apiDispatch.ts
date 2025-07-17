@@ -1,7 +1,7 @@
 "use client";
 
 import axios from "axios";
-import { triggerNotification } from "@nyx/ui";
+import { triggerNotification } from "@vkit/ui";
 
 async function handleTokenExpiry() {
   const res = await axios
