@@ -6,6 +6,10 @@ import {
   UsersIcon,
   UserGearIcon,
   GearIcon,
+  ShieldCheckIcon,
+  FileTextIcon,
+  NoteBlankIcon,
+  ImageIcon,
 } from "@phosphor-icons/react";
 import { _nav as navMain } from "./nav_main";
 import { NavItem } from "../../../../packages/ui/src/layouts/AdminShell/AdminShell.type";
@@ -32,6 +36,7 @@ export const links: NavItem[] = [
     children: [
       {
         label: "Dashboards",
+        roles: ["admin"],
         children: [
           {
             label: "User Dashboard",
@@ -44,12 +49,65 @@ export const links: NavItem[] = [
             url: "/settings",
             roles: ["admin"],
           },
-          { horizontalLine: true, roles: ["admin"] },
+          {
+            label: "Admin Dashboard",
+            roles: ["admin"],
+            children: [
+              {
+                label: "Admin Dashboard",
+                url: "/admin",
+                roles: ["admin"],
+              },
+              {
+                label: "Admin Settings",
+                url: "/admin/settings",
+                roles: ["admin"],
+              },
+              {
+                label: "Advanced",
+                roles: ["admin"],
+                children: [
+                  {
+                    label: "System Logs",
+                    url: "/admin/system/logs",
+                    roles: ["admin"],
+                  },
+                  {
+                    label: "Audit Trail",
+                    url: "/admin/system/audit",
+                    roles: ["admin"],
+                  },
+                  {
+                    label: "Security",
+                    roles: ["admin"],
+                    children: [
+                      {
+                        label: "Firewall Settings",
+                        url: "/admin/security/firewall",
+                        roles: ["admin"],
+                      },
+                      {
+                        label: "IP Whitelist",
+                        url: "/admin/security/ip",
+                        roles: ["admin"],
+                      },
+                      {
+                        label: "Session Management",
+                        url: "/admin/security/session",
+                        roles: ["admin"],
+                      },
+                    ],
+                  },
+                ],
+              },
+            ],
+          },
         ],
-        roles: ["admin"],
       },
+      { horizontalLine: true, roles: ["admin"] },
       {
         label: "Reports",
+        roles: ["admin"],
         children: [
           {
             label: "Sale Reports",
@@ -61,8 +119,39 @@ export const links: NavItem[] = [
             url: "/dashboard/reports/invoice",
             roles: ["admin"],
           },
+          {
+            label: "Analytics",
+            roles: ["admin"],
+            children: [
+              {
+                label: "Traffic",
+                url: "/dashboard/reports/analytics/traffic",
+                roles: ["admin"],
+              },
+              {
+                label: "Engagement",
+                url: "/dashboard/reports/analytics/engagement",
+                roles: ["admin"],
+              },
+              {
+                label: "Conversions",
+                roles: ["admin"],
+                children: [
+                  {
+                    label: "By Product",
+                    url: "/dashboard/reports/analytics/conversions/product",
+                    roles: ["admin"],
+                  },
+                  {
+                    label: "By Region",
+                    url: "/dashboard/reports/analytics/conversions/region",
+                    roles: ["admin"],
+                  },
+                ],
+              },
+            ],
+          },
         ],
-        roles: ["admin"],
       },
       {
         label: "Messages",
@@ -74,33 +163,5 @@ export const links: NavItem[] = [
         roles: ["admin"],
       },
     ],
-  },
-  {
-    label: "Users",
-    description: "Manage users",
-    icon: <UsersIcon size={24} />,
-    url: "/users",
-    roles: ["admin"],
-    children: [
-      {
-        label: "All Users",
-        url: "/users/all",
-        icon: <UsersIcon size={24} />,
-        roles: ["admin"],
-      },
-      {
-        label: "Admins",
-        url: "/users/admin",
-        icon: <UserGearIcon size={24} />,
-        roles: ["admin"],
-      },
-    ],
-  },
-  {
-    label: "Settings",
-    description: "Settings for admin users",
-    icon: <GearIcon size={24} />,
-    url: "/settings",
-    roles: ["admin"],
   },
 ];

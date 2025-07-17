@@ -19,6 +19,12 @@ export type PropAdminShellMainnav = {
   appTitle: string;
 };
 
+export type PropAdminShellSubnav = {
+  navItems: NavItem[];
+  appTitle: string;
+  active: NavItem;
+};
+
 export type PropAdminShell = {
   classnames?: any;
   children: React.ReactNode;
