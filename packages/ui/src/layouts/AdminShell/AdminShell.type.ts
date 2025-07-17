@@ -9,10 +9,6 @@ export type NavItem = {
   customRender?: React.ReactNode;
 };
 
-export type PropAdminShellTopnav = {
-  navItems: any[];
-};
-
 export type PropAdminShellMainnav = {
   logo: string;
   navItems: NavItem[];
@@ -24,6 +20,12 @@ export type PropAdminShellSubnav = {
   appTitle: string;
   active: NavItem;
 };
+
+export type PropAdminShellTopnav = {
+  moduleName: string;
+  actions?: React.ReactNode;
+} & PropAdminShellSubnav &
+  PropAdminShellMainnav;
 
 export type PropAdminShell = {
   classnames?: any;
