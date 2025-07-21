@@ -11,6 +11,15 @@ export function AdminShellSubnav({
   active,
 }: PropAdminShellSubnav) {
   const pathname = usePathname();
+
+  const isChildActive = (children: NavItem[] = []) => {
+    return children.some(
+      (child) =>
+        child.url === pathname ||
+        (child.children && isChildActive(child.children))
+    );
+  };
+
   const renderNavItem = (link: NavItem, level = 0) => {
     if (link.horizontalLine) {
       return (
@@ -49,6 +58,7 @@ export function AdminShellSubnav({
             variant="filled"
             px="md"
             active={link.url === pathname}
+            defaultOpened={isChildActive(link.children)}
             c={link.url === pathname ? "white" : "dimmed"}
             href={link.url}
             style={{
