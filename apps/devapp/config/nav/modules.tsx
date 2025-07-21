@@ -40,7 +40,7 @@ export const links: NavItem[] = [
         children: [
           {
             label: "User Dashboard",
-            url: "/user",
+            url: "/dashboard/user",
             customRender: <CakeIcon size={24} />,
             roles: ["admin"],
           },

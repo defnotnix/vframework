@@ -4,6 +4,7 @@ import { usePathname } from "next/navigation";
 import { Divider, Box, NavLink, Text, Flex, ScrollArea } from "@mantine/core";
 import { CircleIcon } from "@phosphor-icons/react";
 import classes from "./AdminShellSubnav.module.css";
+import Link from "next/link";
 export function AdminShellSubnav({
   navItems,
   appTitle,
@@ -63,6 +64,7 @@ export function AdminShellSubnav({
     }
     return (
       <NavLink
+        component={Link}
         classNames={classes}
         key={link.url}
         label={link.label}
@@ -78,7 +80,7 @@ export function AdminShellSubnav({
         px="md"
         active={link.url === pathname}
         c={link.url === pathname ? "white" : "dimmed"}
-        href={link.url}
+        href={link.url ?? ""}
         style={{
           paddingLeft: level * 16,
           borderRadius: 0,

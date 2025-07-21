@@ -205,6 +205,7 @@ export function FormWrapper({
         <PropContext.Provider
           value={{
             current,
+            setStep,
             isLoading: mutationSubmit.isPending,
             handleStepNext,
             handleStepBack,
