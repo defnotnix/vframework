@@ -2,7 +2,7 @@
 
 import React, { useEffect, useCallback, useMemo } from "react";
 import Cookies from "js-cookie";
-import { usePreferences } from "@nyx/core";
+import { usePreferences } from "@vkit/core";
 //props
 import { PropPreferenceWrapper } from "./PreferenceWrapper.type";
 

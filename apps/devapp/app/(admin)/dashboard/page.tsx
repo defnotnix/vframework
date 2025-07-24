@@ -1,11 +1,20 @@
 "use client";
 
-import { Container, Grid, Paper, SimpleGrid, Stack, Text } from "@mantine/core";
+import { useEffect } from "react";
+import { useBreadcrumbContext } from "../../../../../packages/ui/src/context/BreadcrumbContext";
 
 export default function () {
-  return (
-    <>
-      
-    </>
-  );
+  const { setBreadcrumbs } = useBreadcrumbContext();
+  useEffect(() => {
+    setBreadcrumbs([
+      { label: "Rag" },
+      { label: "Shy" },
+      { label: "Nix" },
+      { label: "Echo" },
+      { label: "Regs" },
+    ]);
+
+    return () => setBreadcrumbs(null);
+  }, []);
+  return <>Dashboard</>;
 }

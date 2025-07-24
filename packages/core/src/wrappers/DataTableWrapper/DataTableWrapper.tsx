@@ -6,7 +6,7 @@ import {
   useDataTableContext,
   DataTableContext,
 } from "./DataTableWrapper.context";
-import { autoSearch } from "@nyx/core";
+import { autoSearch } from "@vkit/core";
 import { useDataTableWrapperStore } from "./DataTableWrapper.store";
 import { PropDataTableWrapper } from "./DataTableWrapper.type";
 

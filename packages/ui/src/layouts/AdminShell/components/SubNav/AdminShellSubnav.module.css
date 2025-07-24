@@ -1,0 +1,15 @@
+.root {
+  padding: 4px;
+}
+
+.label {
+  font-size: 12px !important;
+}
+
+.root:hover {
+  background-color: var(--mantine-color-brand-6);
+}
+
+.root:hover .label {
+  color: var(--mantine-color-white) !important;
+}
